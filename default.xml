@@ -10,6 +10,10 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+  <remote  name="ypg"
+           revision="lp-5.1"
+           fetch="https://github.com/" />
+
   <remote  name="cm"
            fetch="https://github.com/"
            review="review.cyanogenmod.org" />
@@ -22,10 +26,13 @@
            sync-c="true"
            sync-j="4" />
 
+  <!-- YPG Projects -->
+  <project path="manifest" name="YuPlayGodDev/manifest" remote="ypg" />
+
+  <!-- CM Projects -->
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" remote="cm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-12.1" />
