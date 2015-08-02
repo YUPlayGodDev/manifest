@@ -12,7 +12,8 @@
 
   <remote  name="ypg"
            revision="lp-5.1"
-           fetch="https://github.com/" />
+           review="codereview.yuplaygod.com"
+           fetch="https://github.com/YUPlayGodDev/" />
 
   <remote  name="cm"
            fetch="https://github.com/"
@@ -27,9 +28,9 @@
            sync-j="4" />
 
   <!-- YPG Projects -->
-  <project path="manifest" name="YuPlayGodDev/manifest" remote="ypg" />
-  <project path="frameworks/base" name="YuPlayGodDev/android_frameworks_base" remote="ypg" />
-  <project path="packages/apps/Settings" name="YuPlayGodDev/android_packages_apps_Settings" remote="ypg" />
+  <project path="manifest" name="manifest" remote="ypg" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ypg" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ypg" />
 
   <!-- CM Projects -->
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" remote="cm" >
