@@ -32,11 +32,11 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="ypg" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ypg" />
   <project path="vendor/cm" name="android_vendor_cm" remote="ypg" />  
-
-  <!-- CM Projects -->
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" remote="cm" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="ypg" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <!-- CM Projects -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-12.1" />
