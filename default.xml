@@ -28,8 +28,6 @@
            sync-j="4" />
 
   <!-- YPG Projects -->
-  <project path="device/yu/lettuce" name="android_device_yu_lettuce" remote="ypg" />
-  <project path="device/yu/tomato" name="android_device_yu_tomato" remote="ypg" />
   <project path="manifest" name="manifest" remote="ypg" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ypg" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ypg" />
