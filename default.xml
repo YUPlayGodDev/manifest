@@ -19,77 +19,77 @@
            revision="refs/heads/android-6.0.0" />
 		   
 
-  <project path="build" name="platform_build" remote="yu" >
+  <project path="build" name="YUPlayGodDev/platform_build" remote="yu" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/qcom/common" name="device_qcom_common" remote="yu" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="yu" />
-  <project path="art" name="platform_art" remote="yu" />
-  <project path="bionic" name="platform_bionic" remote="yu" />
-  <project path="development" name="platform_development" remote="yu" />
-  <project path="external/android-mock" name="platform_external_android-mock" remote="yu" />
-  <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="yu" />
-  <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="yu" />
-  <project path="external/apache-http" name="platform_external_apache-http" remote="yu" />
-  <project path="external/bash" name="platform_external_bash" groups="pdk" remote="yu" />
-  <project path="external/busybox" name="platform_external_busybox" groups="pdk" remote="yu" />
-  <project path="external/connectivity" name="platform_external_connectivity" remote="yu" />
-  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="yu" />
-  <project path="external/elfutils" name="platform_external_elfutils" remote="yu" />
-  <project path="external/exfat" name="platform_external_exfat" groups="pdk" remote="yu" />
-  <project path="external/f2fs-tools" name="platform_external_f2fs-tools" remote="yu" />
-  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="yu" />
-  <project path="external/ffmpeg" name="platform_external_ffmpeg" remote="yu" />
-  <project path="external/fuse" name="platform_external_fuse" groups="pdk" remote="yu" />
-  <project path="external/iproute2" name="platform_external_iproute2" remote="yu" />
-  <project path="external/jpeg" name="platform_external_jpeg" remote="yu" />
-  <project path="external/libavc" name="platform_external_libavc" groups="pdk" remote="yu" />
-  <project path="external/libnfc-nci" name="platform_external_libnfc-nci" remote="yu" />
-  <project path="external/libpng" name="platform_external_libpng" remote="yu" />
-  <project path="external/libselinux" name="platform_external_libselinux" remote="yu" />
-  <project path="external/mksh" name="platform_external_mksh" remote="yu" />
-  <project path="external/mm-dash" name="platform_external_mm-dash" remote="yu" />
-  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" groups="pdk" remote="yu" />
-  <project path="external/okhttp" name="platform_external_okhttp" remote="yu" />
-  <project path="external/sepolicy" name="platform_external_sepolicy" remote="yu" />
-  <project path="external/skia" name="platform_external_skia" remote="yu" />
-  <project path="external/strace" name="platform_external_strace" remote="yu" />
-  <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="yu" />
-  <project path="external/tinyalsa" name="platform_external_tinyalsa" remote="yu" />
-  <project path="external/tinycompress" name="platform_external_tinycompress" remote="yu" />
-  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="yu" />
-  <project path="external/zlib" name="platform_external_zlib" remote="yu" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="yu" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="yu" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="yu" />
-  <project path="frameworks/opt/chips" name="platform_frameworks_opt_chips" remote="yu" />
-  <project path="frameworks/opt/datetimepicker" name="platform_frameworks_opt_datetimepicker" remote="yu" />
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="yu" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="yu" />
-  <project path="frameworks/support" name="platform_frameworks_support" remote="yu" />
-  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="yu" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="yu" />
-  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" remote="yu" />
-  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom" revision="mm6.0-caf" remote="yu" />
-  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="yu" />
-  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan" remote="yu" />
-  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" groups="qcom_wlan" revision="mm6.0-caf" remote="yu" />
-  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="yu" />
-  <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" revision="mm6.0-caf" remote="yu" />
-  <project path="libcore" name="platform_libcore" remote="yu" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="yu" />
-  <project path="packages/providers/MediaProvider"  name="platform_packages_providers_MediaProvider" remote="yu" />
-  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="yu" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="yu" />
-  <project path="system/core" name="platform_system_core" remote="yu" />
-  <project path="system/extras" name="platform_system_extras" remote="yu" />
-  <project path="system/media" name="platform_system_media" remote="yu" />
-  <project path="system/vold" name="platform_system_vold" remote="yu" />
-  <project path="system/qcom" name="platform_system_qcom" groups="pdk" remote="yu" />  
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="yu" />
-  <project path="vendor/qcom/opensource/display-frameworks" name="platform_vendor_qcom-opensource_display-frameworks" remote="yu" />
-  <project path="vendor/qcom/opensource/dpm" name="platform_vendor_qcom-opensource_dpm" remote="yu" />
-  <project path="vendor/qcom/opensource/time-services" name="platform_vendor_qcom-opensource_time-services" remote="yu" />
+  <project path="device/qcom/common" name="YUPlayGodDev/device_qcom_common" remote="yu" />
+  <project path="device/qcom/sepolicy" name="YUPlayGodDev/device_qcom_sepolicy" remote="yu" />
+  <project path="art" name="YUPlayGodDev/platform_art" remote="yu" />
+  <project path="bionic" name="YUPlayGodDev/platform_bionic" remote="yu" />
+  <project path="development" name="YUPlayGodDev/platform_development" remote="yu" />
+  <project path="external/android-mock" name="YUPlayGodDev/platform_external_android-mock" remote="yu" />
+  <project path="external/ant-wireless/ant_native" name="YUPlayGodDev/platform_external_ant-wireless_ant_native" remote="yu" />
+  <project path="external/ant-wireless/antradio-library" name="YUPlayGodDev/platform_external_ant-wireless_antradio-library" remote="yu" />
+  <project path="external/apache-http" name="YUPlayGodDev/platform_external_apache-http" remote="yu" />
+  <project path="external/bash" name="YUPlayGodDev/platform_external_bash" groups="pdk" remote="yu" />
+  <project path="external/busybox" name="YUPlayGodDev/platform_external_busybox" groups="pdk" remote="yu" />
+  <project path="external/connectivity" name="YUPlayGodDev/platform_external_connectivity" remote="yu" />
+  <project path="external/e2fsprogs" name="YUPlayGodDev/platform_external_e2fsprogs" remote="yu" />
+  <project path="external/elfutils" name="YUPlayGodDev/platform_external_elfutils" remote="yu" />
+  <project path="external/exfat" name="YUPlayGodDev/platform_external_exfat" groups="pdk" remote="yu" />
+  <project path="external/f2fs-tools" name="YUPlayGodDev/platform_external_f2fs-tools" remote="yu" />
+  <project path="external/fsck_msdos" name="YUPlayGodDev/platform_external_fsck_msdos" remote="yu" />
+  <project path="external/ffmpeg" name="YUPlayGodDev/platform_external_ffmpeg" remote="yu" />
+  <project path="external/fuse" name="YUPlayGodDev/platform_external_fuse" groups="pdk" remote="yu" />
+  <project path="external/iproute2" name="YUPlayGodDev/platform_external_iproute2" remote="yu" />
+  <project path="external/jpeg" name="YUPlayGodDev/platform_external_jpeg" remote="yu" />
+  <project path="external/libavc" name="YUPlayGodDev/platform_external_libavc" groups="pdk" remote="yu" />
+  <project path="external/libnfc-nci" name="YUPlayGodDev/platform_external_libnfc-nci" remote="yu" />
+  <project path="external/libpng" name="YUPlayGodDev/platform_external_libpng" remote="yu" />
+  <project path="external/libselinux" name="YUPlayGodDev/platform_external_libselinux" remote="yu" />
+  <project path="external/mksh" name="YUPlayGodDev/platform_external_mksh" remote="yu" />
+  <project path="external/mm-dash" name="YUPlayGodDev/platform_external_mm-dash" remote="yu" />
+  <project path="external/ntfs-3g" name="YUPlayGodDev/platform_external_ntfs-3g" groups="pdk" remote="yu" />
+  <project path="external/okhttp" name="YUPlayGodDev/platform_external_okhttp" remote="yu" />
+  <project path="external/sepolicy" name="YUPlayGodDev/platform_external_sepolicy" remote="yu" />
+  <project path="external/skia" name="YUPlayGodDev/platform_external_skia" remote="yu" />
+  <project path="external/strace" name="YUPlayGodDev/platform_external_strace" remote="yu" />
+  <project path="external/stagefright-plugins" name="YUPlayGodDev/platform_external_stagefright-plugins" remote="yu" />
+  <project path="external/tinyalsa" name="YUPlayGodDev/platform_external_tinyalsa" remote="yu" />
+  <project path="external/tinycompress" name="YUPlayGodDev/platform_external_tinycompress" remote="yu" />
+  <project path="external/wpa_supplicant_8" name="YUPlayGodDev/platform_external_wpa_supplicant_8" remote="yu" />
+  <project path="external/zlib" name="YUPlayGodDev/platform_external_zlib" remote="yu" />
+  <project path="frameworks/av" name="YUPlayGodDev/platform_frameworks_av" remote="yu" />
+  <project path="frameworks/base" name="YUPlayGodDev/platform_frameworks_base" remote="yu" />
+  <project path="frameworks/native" name="YUPlayGodDev/platform_frameworks_native" remote="yu" />
+  <project path="frameworks/opt/chips" name="YUPlayGodDev/platform_frameworks_opt_chips" remote="yu" />
+  <project path="frameworks/opt/datetimepicker" name="YUPlayGodDev/platform_frameworks_opt_datetimepicker" remote="yu" />
+  <project path="frameworks/opt/net/wifi" name="YUPlayGodDev/platform_frameworks_opt_net_wifi" remote="yu" />
+  <project path="frameworks/opt/telephony" name="YUPlayGodDev/platform_frameworks_opt_telephony" remote="yu" />
+  <project path="frameworks/support" name="YUPlayGodDev/platform_frameworks_support" remote="yu" />
+  <project path="hardware/libhardware" name="YUPlayGodDev/platform_hardware_libhardware" groups="pdk" remote="yu" />
+  <project path="hardware/libhardware_legacy" name="YUPlayGodDev/platform_hardware_libhardware_legacy" groups="pdk" remote="yu" />
+  <project path="hardware/qcom/bt" name="YUPlayGodDev/platform_hardware_qcom_bt" remote="yu" />
+  <project path="hardware/qcom/bt-caf" name="YUPlayGodDev/platform_hardware_qcom_bt" groups="qcom" revision="mm6.0-caf" remote="yu" />
+  <project path="hardware/qcom/keymaster" name="YUPlayGodDev/platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="yu" />
+  <project path="hardware/qcom/wlan" name="YUPlayGodDev/platform_hardware_qcom_wlan" groups="qcom_wlan" remote="yu" />
+  <project path="hardware/qcom/wlan-caf" name="YUPlayGodDev/platform_hardware_qcom_wlan" groups="qcom_wlan" revision="mm6.0-caf" remote="yu" />
+  <project path="hardware/ril" name="YUPlayGodDev/platform_hardware_ril" groups="pdk" remote="yu" />
+  <project path="hardware/ril-caf" name="YUPlayGodDev/platform_hardware_ril" groups="pdk" revision="mm6.0-caf" remote="yu" />
+  <project path="libcore" name="YUPlayGodDev/platform_libcore" remote="yu" />
+  <project path="packages/apps/Settings" name="YUPlayGodDev/platform_packages_apps_Settings" remote="yu" />
+  <project path="packages/providers/MediaProvider"  name="YUPlayGodDev/platform_packages_providers_MediaProvider" remote="yu" />
+  <project path="packages/providers/TelephonyProvider" name="YUPlayGodDev/platform_packages_providers_TelephonyProvider" remote="yu" />
+  <project path="packages/services/Telephony" name="YUPlayGodDev/platform_packages_services_Telephony" remote="yu" />
+  <project path="system/core" name="YUPlayGodDev/platform_system_core" remote="yu" />
+  <project path="system/extras" name="YUPlayGodDev/platform_system_extras" remote="yu" />
+  <project path="system/media" name="YUPlayGodDev/platform_system_media" remote="yu" />
+  <project path="system/vold" name="YUPlayGodDev/platform_system_vold" remote="yu" />
+  <project path="system/qcom" name="YUPlayGodDev/platform_system_qcom" groups="pdk" remote="yu" />  
+  <project path="vendor/aosp" name="YUPlayGodDev/platform_vendor_aosp" remote="yu" />
+  <project path="vendor/qcom/opensource/display-frameworks" name="YUPlayGodDev/platform_vendor_qcom-opensource_display-frameworks" remote="yu" />
+  <project path="vendor/qcom/opensource/dpm" name="YUPlayGodDev/platform_vendor_qcom-opensource_dpm" remote="yu" />
+  <project path="vendor/qcom/opensource/time-services" name="YUPlayGodDev/platform_vendor_qcom-opensource_time-services" remote="yu" />
   
 <!-- BEGIN DEVICE SPECIFIC REPOS -->
   <project path="device/cyanogen/msm8916-common" name="platform_device_cyanogen_msm8916-common" remote="yu" />
