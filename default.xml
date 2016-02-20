@@ -2,25 +2,31 @@
 <manifest>
   <remote  fetch="git://codeaurora.org/"
   	       name="caf"
+  	       sync-c="true"
   	       revision="LA.BF64.1.2.2_rb4.25"
   	       review="codeaurora.org"/>
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
+  	       sync-c="true"
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r3" />
 
   <remote  name="cm"
            fetch="https://github.com"
+  	       sync-c="true"
            review="review.cyanogenmod.org"
            revision="refs/heads/cm-13.0" />
 	
   <remote  name="yu"
            fetch=".."
+  	       sync-c="true"
            review="codereview.yuplaygod.com"
            revision="refs/heads/android-6.0.0-caf" />
 
-  <default remote="caf" revision="LA.BF64.1.2.2_rb4.25"/>
+  <default remote="caf" 
+  	       sync-c="true"
+           revision="LA.BF64.1.2.2_rb4.25" />
 		   
 <!-- BEGIN AOSP-CAF -->
   <project name="YUPlayGodDev/platform_manifest" path="manifest" remote="yu" />
