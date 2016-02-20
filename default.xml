@@ -69,12 +69,12 @@
   <project name="YUPlayGodDev/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_libhardware" path="hardware/libhardware" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="yu" />
-  <project name="YUPlayGodDev/platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_bt" path="hardware/qcom/bt" revision="android-6.0.1-aosp" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_bt" path="hardware/qcom/bt-caf"  remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="yu" />
-  <project name="YUPlayGodDev/platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_wlan" path="hardware/qcom/wlan" revision="android-6.0.1-aosp" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf"  remote="yu" />
-  <project name="YUPlayGodDev/platform_hardware_ril" path="hardware/ril" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_ril" path="hardware/ril" revision="android-6.0.1-aosp" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_ril" path="hardware/ril-caf"  remote="yu" />
   <project name="YUPlayGodDev/platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="yu" />
   <project name="YUPlayGodDev/platform_packages_apps_Settings" path="packages/apps/Settings" remote="yu" />
@@ -149,7 +149,7 @@
   <project groups="pdk-cw-fs" name="platform/external/dexmaker" path="external/dexmaker"/>
   <project groups="pdk-cw-fs" name="platform/external/dhcpcd" path="external/dhcpcd"/>
   <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq"/>
-  <project groups="pdk-cw-fs" name="platform/external/doclava" path="external/doclava"/>
+  <project groups="pdk-cw-fs" name="platform/external/doclava" path="external/doclava" remote="aosp" />
   <project name="platform/external/donuts" path="external/donuts"/>
   <project groups="drm_gralloc" name="platform/external/drm_gralloc" path="external/drm_gralloc"/>
   <project groups="drm_hwcomposer" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer"/>
