@@ -22,7 +22,7 @@
            fetch=".."
   	       sync-c="true"
            review="codereview.yuplaygod.com"
-           revision="refs/heads/android-6.0.0-caf" />
+           revision="refs/heads/android-6.0.1-caf" />
 
   <default remote="caf" 
   	       sync-c="true"
