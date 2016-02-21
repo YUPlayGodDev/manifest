@@ -90,6 +90,15 @@
   <project name="YUPlayGodDev/platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="yu" />
   <project name="YUPlayGodDev/platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="yu" />
 <!-- END AOSP-CAF -->
+
+<!-- BEGIN DEVICE SPECIFIC REPOS -->
+  <project path="device/cyanogen/msm8916-common" name="YUPlayGodDev/platform_device_cyanogen_msm8916-common" remote="yu" />
+  <project path="device/cyanogen/msm8939-common" name="YUPlayGodDev/platform_device_cyanogen_msm8939-common" remote="yu" />
+  <project path="device/yu/tomato" name="YUPlayGodDev/platform_device_yu_tomato" remote="yu" />
+  <project path="device/yu/lettuce" name="YUPlayGodDev/platform_device_yu_lettuce" remote="yu" />
+  <project path="kernel/cyanogen/msm8916" name="YUPlayGodDev/platform_kernel_cyanogen_msm8916" remote="yu" />
+  <project path="vendor/yu" name="YUPlayGodDev/platform_vendor_yu" remote="yu" />
+<!-- END DEVICE SPECIFIC REPOS -->
   
 <!-- BEGIN CYANOGENMOD -->
   <project name="CyanogenMod/android_external_libncurses" path="external/libncurses" remote="cm" />
