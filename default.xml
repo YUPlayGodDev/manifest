@@ -11,12 +11,6 @@
   	       sync-c="true"
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r3" />
-
-  <remote  name="cm"
-           fetch="https://github.com"
-  	       sync-c="true"
-           review="review.cyanogenmod.org"
-           revision="refs/heads/cm-13.0" />
 	
   <remote  name="yu"
            fetch=".."
@@ -53,6 +47,7 @@
   <project name="YUPlayGodDev/platform_external_fuse" path="external/fuse" remote="yu" />
   <project name="YUPlayGodDev/platform_external_iproute2" path="external/iproute2" remote="yu" />
   <project name="YUPlayGodDev/platform_external_jpeg" path="external/jpeg" remote="yu" />
+  <project name="YUPlayGodDev/platform_external_libncurses" path="external/libncurses" remote="yu" />
   <project name="YUPlayGodDev/platform_external_mksh" path="external/mksh" remote="yu" />
   <project name="YUPlayGodDev/platform_external_mm-dash" path="external/mm-dash" remote="yu" />
   <project name="YUPlayGodDev/platform_external_ntfs-3g" path="external/ntfs-3g" remote="yu" />
@@ -69,9 +64,17 @@
   <project name="YUPlayGodDev/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_libhardware" path="hardware/libhardware" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_audio" path="hardware/qcom/audio/default" groups="qcom,qcom_audio" remote="yu" /> 
+  <project name="YUPlayGodDev/platform_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" groups="qcom,qcom_audio" revision="android-6.0.1-caf-8916" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_bt" path="hardware/qcom/bt" revision="android-6.0.1-aosp" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_bt" path="hardware/qcom/bt-caf"  remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_camera" path="hardware/qcom/camera" groups="qcom" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_display" path="hardware/qcom/display" groups="pdk,qcom,qcom_display" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" groups="pdk,qcom,qcom_display" revision="android-6.0.1-caf-8916" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_gps" path="hardware/qcom/gps" groups="qcom,qcom_gps" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_media" path="hardware/qcom/media/default" groups="qcom" remote="yu" />
+  <project name="YUPlayGodDev/platform_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" groups="qcom" revision="android-6.0.1-caf-8916" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_wlan" path="hardware/qcom/wlan" revision="android-6.0.1-aosp" remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf"  remote="yu" />
   <project name="YUPlayGodDev/platform_hardware_ril" path="hardware/ril" revision="android-6.0.1-aosp" remote="yu" />
@@ -90,27 +93,6 @@
   <project name="YUPlayGodDev/platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="yu" />
   <project name="YUPlayGodDev/platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="yu" />
 <!-- END AOSP-CAF -->
-
-<!-- BEGIN DEVICE SPECIFIC REPOS -->
-  <project path="device/cyanogen/msm8916-common" name="YUPlayGodDev/device_cyanogen_msm8916-common" remote="yu" />
-  <project path="device/cyanogen/msm8939-common" name="YUPlayGodDev/device_cyanogen_msm8939-common" remote="yu" />
-  <project path="device/yu/tomato" name="YUPlayGodDev/device_yu_tomato" remote="yu" />
-  <project path="device/yu/lettuce" name="YUPlayGodDev/device_yu_lettuce" remote="yu" />
-  <project path="kernel/cyanogen/msm8916" name="YUPlayGodDev/kernel_cyanogen_msm8916" remote="yu" />
-  <project path="vendor/yu" name="YUPlayGodDev/platform_vendor_yu" remote="yu" />
-<!-- END DEVICE SPECIFIC REPOS -->
-  
-<!-- BEGIN CYANOGENMOD -->
-  <project name="CyanogenMod/android_external_libncurses" path="external/libncurses" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
-  <project path="hardware/qcom/audio-caf/msm8916" remote="cm" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-13.0-caf-8916" />
-  <project name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
-  <project path="hardware/qcom/display-caf/msm8916" remote="cm" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-13.0-caf-8916" />
-  <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="cm" />
-  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
-  <project path="hardware/qcom/media-caf/msm8916" remote="cm" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-13.0-caf-8916" />
-<!-- END CYANOGENMOD -->
 
 <!-- BEGIN CODEAURORA -->
   <project groups="pdk-cw-fs" name="device/common"/>
